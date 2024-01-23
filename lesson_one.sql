@@ -3,6 +3,9 @@
 
 -- Each table is a type of entity, and each row is a specific instance of that type
 
+-- id, title, director, year, length_minutes
+
+
 -- Find the title of each movie
 SELECT Title FROM movies;
 

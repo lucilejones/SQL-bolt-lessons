@@ -14,7 +14,7 @@
 -- Full-text search is best left to dedicated libraries that are designed to do full text seach
 -- examples: Apache Lucene or Sphinx
 
-id, title, directo, year, length_minutes
+-- id, title, director, year, length_minutes
 
 -- Find all the Toy Story movies
 SELECT * FROM movies WHERE Title LIKE "Toy Story%";

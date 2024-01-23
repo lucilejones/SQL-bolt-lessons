@@ -2,6 +2,7 @@
 -- we can create complex clauses with AND, OR, =, !=, <, <=, >, >=
 -- BETWEEN ... AND ..., NOT BETWEEN ... AND ..., IN (...), NOT IN (...)
 
+-- id, title, director, year, length_minutes
 
 -- Find the movie with a row if of 6
 SELECT * FROM movies WHERE id = 6;

@@ -15,6 +15,8 @@
 -- [example of front page of Reddit with most popular post, then each subsequent page]
 -- [is a set of links at different offsets in the database]
 
+-- id, title, director, year, length_minutes
+
 
 -- List all directors of Pixar movies (alphabetically) without duplicates
 SELECT DISTINCT Director FROM movies ORDER BY Director;
