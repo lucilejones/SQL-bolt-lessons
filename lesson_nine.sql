@@ -19,3 +19,22 @@ FROM a_long_widgets_table_name AS mywidgets
 INNER JOIN widget_sales
   ON mywidgets.id = widget_sales.widget_id;
 
+-- id, title, director, year, length_minutes
+-- movie_id, rating, domestic_sales, international_sales
+
+-- List all movies and their combined sales in millions of dollars
+SELECT title, (domestic_sales + international_sales) / 1000000 AS gross_sales_millions
+FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id;
+
+-- List all movies and their ratings in percent
+SELECT Title, Rating*10
+FROM movies
+  JOIN boxoffice
+    ON movies.id = boxoffice.movie_id;
+
+-- List all movies that were released on even numbered years
+SELECT Title, Year
+FROM movies
+  WHERE Year % 2 = 0;
